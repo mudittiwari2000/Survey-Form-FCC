@@ -2,30 +2,121 @@
 <html lang="en">
 
 <head>
-    <title>Survey Form</title>
+  <title>Survey Form</title>
 
-    <!-- Required Meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/stylesheets/styles.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/stylesheets/styles.css">
+
+  <!-- Scripts -->
+  <script src="/assets/scripts/script.js" defer></script>
 </head>
 
 <body>
 
+  <div id="bg"></div>
 
-    <!-- Jquery -->
-    <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <!-- Popper.js -->
-    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <div class="container">
+    <div class="container card text-center bg-none">
+
+      <div class="card-header row">
+        <div class="container">
+          <h1 id="title"><span class="d-none d-sm-inline">freeCodeCamp</span> Survey Form</h1>
+          <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+      </div>
+
+      <div class="card-body d-flex flex-row justify-content-center">
+        <div class="col-12 col-sm-10">
+
+          <form action="" id="survey-form">
+            <!-- Name group -->
+            <div class="form-group row">
+              <label for="name" class="form-control-label col-12 col-sm-3" id="name-label">Name</label>
+              <div class="col-sm-9 form-input">
+                <input type="text" name="name" id="name" class="form-control bg-transparent rounded" placeholder="Enter your Name"
+                  required>
+              </div>
+            </div>
+            <!-- Email group -->
+            <div class="form-group row">
+              <label for="email" class="form-control-label col-12 col-sm-3" id="email-label">Email</label>
+              <div class="col-sm-9 form-input">
+                <input type="email" name="email" id="email" class="form-control bg-transparent rounded" placeholder="Enter your Email" required>
+              </div>
+            </div>
+            <!-- Age group -->
+            <div class="form-group row">
+              <label for="age" class="form-control-label col-12 col-sm-3" id="number-label">Age (optional)</label>
+              <div class="col-sm-9 form-input">
+                <input type="number" name="age" id="age" min="0" max="150" class="form-control bg-transparent rounded" placeholder="Enter your Age">
+              </div>
+            </div>
+            <!-- bestDescription group -->
+            <div class="form-group row">
+              <label for="bestDesc" class="form-control-label col-12">Which option best describes your current role?</label>
+              <div class="col-12 form-input" id="dropdown">
+                <select name="bestDesc" id="bestDesc" class="form-control">
+                  <option value="" selected>Select current role</option>
+                  <option value="">Student</option>
+                  <option value="">Full time Job</option>
+                  <option value="">Full time Learner</option>
+                  <option value="">Prefer not to say</option>
+                  <option value="">Other</option>
+                </select>
+              </div>
+            </div>
+            <!-- recommendation group -->
+            <h2 class="custom-control-header">
+              Would you recommend freeCodeCamp to a friend?
+            </h2>
+            <div class="custom-control custom-radio text-left ml-2">
+              <input type="radio" id="recom-def" name="recom" class="custom-control-input" checked>
+              <label class="custom-control-label" for="recom-def">Definitely</label>
+            </div>
+            <div class="custom-control custom-radio text-left ml-2">
+              <input type="radio" id="recom-maybe" name="recom" class="custom-control-input">
+              <label class="custom-control-label" for="recom-maybe">Maybe</label>
+            </div>
+            <div class="custom-control custom-radio text-left ml-2">
+              <input type="radio" id="recom-notsure" name="recom" class="custom-control-input">
+              <label class="custom-control-label" for="recom-notsure">Not sure</label>
+            </div>
+            <!-- bestFeature group -->
+            <div class="form-group row">
+              <label for="bestFeature" class="form-control-label col-12">What is your favorite feature of freeCodeCamp?</label>
+              <div class="col-12 form-input">
+                <select name="bestFeature" id="bestFeature" class="form-control">
+                  <option value="" selected>Select an option</option>
+                  <option value="">Challenges</option>
+                  <option value="">Projects</option>
+                  <option value="">Community</option>
+                  <option value="">Open Source</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Jquery -->
+  <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <!-- Popper.js -->
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
