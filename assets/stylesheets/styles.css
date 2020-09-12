@@ -33,7 +33,7 @@ body {
   background-color: black;
   background-image: linear-gradient(315deg, rgba(214, 170, 176, 0.7) 0%,
       rgba(117, 204, 219, 0.7) 74%),
-    url(/assets/imgs/office-bg.jpg);
+    url(assets/imgs/office-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
