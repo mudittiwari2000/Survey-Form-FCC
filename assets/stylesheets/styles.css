@@ -23,6 +23,11 @@
 */
 body {
   font-family: var(--ff-ss);
+  overflow-x: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #bg {
@@ -33,7 +38,7 @@ body {
   background-color: black;
   background-image: linear-gradient(315deg, rgba(214, 170, 176, 0.7) 0%,
       rgba(117, 204, 219, 0.7) 74%),
-    url(assets/imgs/office-bg.jpg);
+    url(/assets/imgs/office-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -43,7 +48,7 @@ body > .container {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 2vmax auto;
+  padding: 20px auto;
 }
 
 .card {
@@ -132,6 +137,6 @@ form div[class$="form-input"] {
 }
 
 form div[class$="form-input"]:hover,
-form div[class$="form-input"]:focus {
+form div[class$="form-input"]:focus-within {
   box-shadow: 0 0 15px rgba(30, 30, 30, 0.8);
 }
