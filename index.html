@@ -11,10 +11,11 @@
   <!-- Bootstrap CSS
   <!-- <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css"> --> -->
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css"> -->
 
   <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css">
@@ -27,14 +28,12 @@
 
   <div id="bg"></div>
 
-  <div class="container">
-    <div class="container card text-center bg-none">
+  <div class="container card-container">
+    <div class="card text-center bg-none">
 
       <div class="card-header row">
-        <div class="container">
-          <h1 id="title"><span class="d-none d-sm-inline">freeCodeCamp</span> Survey Form</h1>
-          <p id="description">Thank you for taking the time to help us improve the platform</p>
-        </div>
+        <h1 id="title"><span class="d-none d-md-inline">freeCodeCamp</span> Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
       </div>
 
       <div class="card-body d-flex flex-row justify-content-center">
@@ -45,27 +44,30 @@
             <div class="form-group row">
               <label for="name" class="form-control-label col-12 col-sm-3" id="name-label">Name</label>
               <div class="col-sm-9 form-input">
-                <input type="text" name="name" id="name" class="form-control bg-transparent rounded" placeholder="Enter your Name"
-                  required>
+                <input type="text" name="name" id="name" class="form-control bg-transparent rounded"
+                  placeholder="Enter your Name" required>
               </div>
             </div>
             <!-- Email group -->
             <div class="form-group row">
               <label for="email" class="form-control-label col-12 col-sm-3" id="email-label">Email</label>
               <div class="col-sm-9 form-input">
-                <input type="email" name="email" id="email" class="form-control bg-transparent rounded" placeholder="Enter your Email" required>
+                <input type="email" name="email" id="email" class="form-control bg-transparent rounded"
+                  placeholder="Enter your Email" required>
               </div>
             </div>
             <!-- Age group -->
             <div class="form-group row">
               <label for="age" class="form-control-label col-12 col-sm-3" id="number-label">Age (optional)</label>
               <div class="col-sm-9 form-input">
-                <input type="number" name="age" id="age" min="0" max="150" class="form-control bg-transparent rounded" placeholder="Enter your Age">
+                <input type="number" name="age" id="age" min="0" max="150" class="form-control bg-transparent rounded"
+                  placeholder="Enter your Age">
               </div>
             </div>
             <!-- bestDescription group -->
             <div class="form-group row">
-              <label for="bestDesc" class="form-control-label col-12">Which option best describes your current role?</label>
+              <label for="bestDesc" class="form-control-label col-12">Which option best describes your current
+                role?</label>
               <div class="col-12 form-input" id="dropdown">
                 <select name="bestDesc" id="bestDesc" class="form-control">
                   <option value="" selected>Select current role</option>
@@ -95,7 +97,8 @@
             </div>
             <!-- bestFeature group -->
             <div class="form-group row">
-              <label for="bestFeature" class="form-control-label col-12">What is your favorite feature of freeCodeCamp?</label>
+              <label for="bestFeature" class="form-control-label col-12">What is your favorite feature of
+                freeCodeCamp?</label>
               <div class="col-12 form-input">
                 <select name="bestFeature" id="bestFeature" class="form-control">
                   <option value="" selected>Select an option</option>
@@ -106,6 +109,70 @@
                 </select>
               </div>
             </div>
+            <!-- Improvement suggestion -->
+            <h2 class="form-check-header">What would you like to see improved? (Check all that apply)</h2>
+            <div class="form-group row">
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck1"
+                  value="Front-end projects">
+                <label for="improveCheck1" class="form-check-label ml-1">Front-end projects</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck2"
+                  value="Back-end projects">
+                <label for="improveCheck2" class="form-check-label ml-1">Back-end projects</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck3"
+                  value="Data Visualization">
+                <label for="improveCheck3" class="form-check-label ml-1">Data Visualization</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck4"
+                  value="Challenges">
+                <label for="improveCheck4" class="form-check-label ml-1">Challenges</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck5"
+                  value="Open Source Community">
+                <label for="improveCheck5" class="form-check-label ml-1">Open Source Community</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck6"
+                  value="Gitter help rooms">
+                <label for="improveCheck6" class="form-check-label ml-1">Gitter help rooms</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck7" value="Videos">
+                <label for="improveCheck7" class="form-check-label ml-1">Videos</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck8"
+                  value="City Meetups">
+                <label for="improveCheck8" class="form-check-label ml-1">City Meetups</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck9" value="Wiki">
+                <label for="improveCheck9" class="form-check-label ml-1">Wiki</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck10" value="Forum">
+                <label for="improveCheck10" class="form-check-label ml-1">Forum</label>
+              </div>
+              <div class="form-check col-12 text-left">
+                <input type="checkbox" class="form-check-input" name="improveCheck" id="improveCheck11"
+                  value="Additional Courses">
+                <label for="improveCheck11" class="form-check-label ml-1">Additional Courses</label>
+              </div>
+            </div>
+            <!-- Comment section -->
+            <div class="form-group row">
+              <label for="commentSection" class="form-control-label">Any comments or suggestions?</label>
+              <textarea class="form-control" id="commentSection" rows="5"></textarea>
+            </div>
+            <div class="form-group row">
+              <button type="submit" class="btn btn-success col-12" id="submit">Submit</button>
+            </div>
           </form>
 
         </div>
@@ -115,7 +182,15 @@
   </div>
 
   <!-- Bootstrap JS CDN -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
   <!-- Jquery
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <!-- Popper.js
